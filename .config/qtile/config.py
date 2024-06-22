@@ -1,6 +1,6 @@
 # ------------------------ importing modules ------------------------ #
 
-from modules.bars.black_bar import screens
+from modules.bars.pink_bar import screens
 from modules.groups import groups
 from modules.hooks import *
 from modules.keys import keys

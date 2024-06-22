@@ -8,7 +8,7 @@ function run {
 }
 
 
-feh --bg-scale ~/Pictures/wallpapers/black_wallpaper.jpg &
+feh --bg-scale ~/Pictures/wallpapers/pink_wallpaper.jpg &
 run sxhkd -c ~/.config/qtile/sxhkd/sxhkdrc &
 playerctld &
 kdeconnect-indicator &

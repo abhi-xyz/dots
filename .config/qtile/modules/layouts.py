@@ -13,7 +13,6 @@ def init_layout_theme():
 
 layout_theme = init_layout_theme()
 
-
 layouts = [
     layout.Columns(**layout_theme),
     layout.MonadTall(**layout_theme),
