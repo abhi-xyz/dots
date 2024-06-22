@@ -13,12 +13,19 @@ vim.opt.rtp:prepend(lazypath)
 
 
 
-require("lazy").setup({ { import = "abhi.plugins" }, { import = "abhi.plugins.lsp" }, {import = "abhi.plugins.pretty_code" } }, {
-  checker = {
-    enabled = true,
-    notify = false,
+require("lazy").setup(
+  {
+    { import = "abhi.plugins" },
+    { import = "abhi.plugins.lsp" },
+    { import = "abhi.plugins.colorschemes" },
+    { import = "abhi.plugins.ui" },
   },
-  change_detection = {
-    notify = false,
-  },
-})
+  {
+    checker = {
+      enabled = true,
+      notify = false,
+    },
+    change_detection = {
+      notify = false,
+    },
+  })

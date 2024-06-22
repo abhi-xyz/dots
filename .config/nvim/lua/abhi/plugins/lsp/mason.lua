@@ -5,7 +5,7 @@ return {
     "WhoIsSethDaniel/mason-tool-installer.nvim",
   },
   config = function()
-    local mason = require("mason") -- import mason
+    local mason = require("mason")                     -- import mason
     local mason_lspconfig = require("mason-lspconfig") -- import mason-lspconfig
     local mason_tool_installer = require("mason-tool-installer")
 
@@ -22,16 +22,17 @@ return {
     mason_lspconfig.setup({
       -- list of servers for mason to install
       ensure_installed = {
-        "pylsp",
         "rust_analyzer",
+        "ltex-ls",
       },
     })
 
     mason_tool_installer.setup({
       ensure_installed = {
         "isort", -- python formatter
+        "black",
+        "rustfmt",
       },
     })
-
   end,
 }

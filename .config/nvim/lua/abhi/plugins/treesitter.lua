@@ -5,25 +5,22 @@ return {
   event = { "BufReadPre", "BufNewFile" },
   build = ":TSUpdate",
   dependencies = {
-      "hiphish/rainbow-delimiters.nvim",
-      "windwp/nvim-autopairs",
-      "windwp/nvim-ts-autotag",
+    "hiphish/rainbow-delimiters.nvim",
+    "windwp/nvim-autopairs",
+    "windwp/nvim-ts-autotag",
   },
   config = function()
     -- import nvim-treesitter plugin
     local treesitter = require("nvim-treesitter.configs")
 
     -- configure treesitter
-    treesitter.setup({ -- enable syntax highlighting
+    treesitter.setup({
       highlight = { enable = true },
-      -- enable indentation
       indent = { enable = true },
-      -- enable autotagging (w/ nvim-ts-autotag plugin)
       autotag = {
         enable = true,
       },
-      -- ensure these language parsers are installed
-      sync_install = false,
+      sync_install = true,
       auto_install = true,
 
       ensure_installed = {
@@ -35,7 +32,7 @@ return {
         "html",
         "lua",
         "nix",
-        "org",
+        --"org",
         "python",
         "rust",
         "rasi",
@@ -46,6 +43,7 @@ return {
         "yaml",
         "zathurarc",
       },
+      ignore_install = { 'org' },
       incremental_selection = {
         enable = true,
         keymaps = {
@@ -55,11 +53,11 @@ return {
           node_decremental = "<bs>",
         },
         autotag = {
-				enable = true,
-			},
-			autopairs = {
-				enable = true,
-			},
+          enable = true,
+        },
+        autopairs = {
+          enable = true,
+        },
 
         rainbow = {
           enable = true,
