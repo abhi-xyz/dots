@@ -1,4 +1,10 @@
 # Byte-compiled / optimized / DLL files
+auto-save-list/
+eln-cache/
+elpaca/
+projectile-bookmarks.eld
+recentf
+
 __pycache__/
 *.py[cod]
 *$py.class
