@@ -8,11 +8,12 @@ function run {
 }
 
 
-feh --bg-scale ~/Pictures/wallpapers/pink_wallpaper.jpg &
+feh --bg-scale ~/.config/qtile/assets/wallpapers/wallp-pink.png &
 run sxhkd -c ~/.config/qtile/sxhkd/sxhkdrc &
 playerctld &
 kdeconnect-indicator &
-
+setxkbmap -option caps:swapescape &
+#setxkbmap -option grp:lalt_lshift_toggle &
 
 run variety &
 run nm-applet &

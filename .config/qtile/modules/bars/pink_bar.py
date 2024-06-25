@@ -35,7 +35,8 @@ screens = [
                     filename="~/.config/qtile/assets/icons/archlinux.svg",
                     margin=2,
                     background=base_color02,
-                    mouse_callbacks={"Button1": lambda: qtile.cmd_spawn("alacritty")},
+                    mouse_callbacks={
+                        "Button1": lambda: qtile.cmd_spawn("alacritty")},
                 ),
                 widget.Image(
                     filename="~/.config/qtile/assets/bar/pink/6.png",
