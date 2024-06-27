@@ -376,6 +376,10 @@
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 
 (custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(org-level-1 ((t (:inherit outline-1 :height 1.7))))
  '(org-level-2 ((t (:inherit outline-2 :height 1.6))))
  '(org-level-3 ((t (:inherit outline-3 :height 1.5))))
@@ -446,13 +450,19 @@
   (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
         doom-themes-enable-italic t) ; if nil, italics is universally disabled
   ;; Sets the default theme to load!!! 
-  (load-theme 'doom-one t)
+  ;;(load-theme 'doom-one t)
   ;; Enable custom neotree theme (all-the-icons must be installed!)
   (doom-themes-neotree-config)
   ;; Corrects (and improves) org-mode's native fontification.
   (doom-themes-org-config))
 
 (add-to-list 'default-frame-alist '(alpha-background . 85)) ; For all new frames henceforth
+
+(use-package base16-theme
+  :ensure t
+  :config
+  (load-theme 'base16-default-dark t))
+
 
 (use-package which-key
   :init
@@ -471,3 +481,10 @@
 	  which-key-max-description-length 25
 	  which-key-allow-imprecise-window-fit nil
 	  which-key-separator " → " ))
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   '("94ac10e5261b9a32c9f1a7ef88f3fb89bfcbad843436aaaedc97c7975d8e6ab2" "dea106ab256a8017a325f51f01b1131915989fa25db48eb831ffb18dac8ecd39" "a07c53c3c821494eaf093a3a822a392cab173e26f9918a27c4198d18d94a9114" "4e87dc5a6a6bd3ab09b1b86f3a0ab8f6bc86998f5be3b10474528a7834bf1c0b" "eff66f28da7d1590650ebcc602fc1752fec11fe03ad0f01cc9696c31d7f27e7b" default)))

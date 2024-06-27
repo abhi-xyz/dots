@@ -120,6 +120,7 @@ history = 5000
 dynamic_padding = false
 opacity = 0.85
 title = "Alacritty"
+blur = true
 
 [window.class]
 general = "Alacritty"

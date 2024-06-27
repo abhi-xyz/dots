@@ -450,8 +450,12 @@ export LLVM_CONFIG_PATH=/bin/llvm-config
 export LIBCLANG_PATH=/lib/libclang.so
 
 
+alias cnvim="nvim ~/.config/nvim/"
+
+alias m="mkdir"
 alias n="nvim"
 alias v="nvim"
+alias t="touch"
 alias gcl="git clone"
 alias spss="sudo pacman -Ss"
 alias spr="sudo pacman -Rns"
