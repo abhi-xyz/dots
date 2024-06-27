@@ -1,10 +1,11 @@
 return {
   "RRethy/base16-nvim",
+  "frenzyexists/aquarium-vim",
+  --"jthvai/lavender.nvim",
   config = function()
-    vim.cmd('colorscheme base16-gruvbox-dark-hard')
-  end
-}
-
+--vim.cmd('colorscheme lavender')
+--vim.cmd('colorscheme aquarium')
+--vim.cmd('colorscheme base16-gruvbox-dark-hard')
 --vim.cmd('colorscheme base16-3024')
 --vim.cmd('colorscheme base16-apathy')
 --vim.cmd('colorscheme base16-apprentice')
@@ -94,7 +95,7 @@ return {
 --vim.cmd('colorscheme base16-eva')
 --vim.cmd('colorscheme base16-eva-dim')
 --vim.cmd('colorscheme base16-evenok-dark')
---vim.cmd('colorscheme base16-everforest')
+  vim.cmd('colorscheme base16-everforest')
 --vim.cmd('colorscheme base16-flat')
 --vim.cmd('colorscheme base16-framer')
 --vim.cmd('colorscheme base16-fruit-soda')
@@ -245,3 +246,8 @@ return {
 --vim.cmd('colorscheme base16-woodland')
 --vim.cmd('colorscheme base16-xcode-dusk')
 --vim.cmd('colorscheme base16-zenburn')
+
+  end
+}
+
+
