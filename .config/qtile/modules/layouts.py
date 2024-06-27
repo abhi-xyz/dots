@@ -7,7 +7,8 @@ def init_layout_theme():
         "margin": 7,
         "border_width": 3,
         "border_focus": "#f5bde6",
-        "border_normal": "#cba6f7",
+        "border_normal": "#000000",
+        # "border_normal": "#cba6f7",
     }
 
 

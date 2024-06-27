@@ -8,13 +8,14 @@ function run {
 }
 
 
-feh --bg-scale ~/.config/qtile/assets/wallpapers/wallp-pink.png &
+feh --bg-scale ~/.config/qtile/assets/wallpapers/wallp_pink_02.png &
 run sxhkd -c ~/.config/qtile/sxhkd/sxhkdrc &
 playerctld &
+clipmenud &
 kdeconnect-indicator &
-setxkbmap -option caps:swapescape &
+#setxkbmap -option caps:swapescape &
 #setxkbmap -option grp:lalt_lshift_toggle &
-
+setxkbmap -option caps:escape_shifted_capslock &
 run variety &
 run nm-applet &
 #run pamac-tray &
@@ -37,6 +38,9 @@ picom --config $HOME/.config/qtile/scripts/picom.conf &
 
 #start the conky to learn the shortcuts
 (conky -c $HOME/.config/qtile/scripts/system-overview) &
+(conky -c $HOME/.config/qtile/scripts/time) &
+(conky -c $HOME/.config/qtile/scripts/conky_date.conf) &
+#(conky -c $HOME/.config/conky/Mira/Mira.conf) &
 
 
 #Set your native resolution IF it does not exist in xrandr

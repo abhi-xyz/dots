@@ -29,12 +29,12 @@ conky.config = {
 
 	--Placement
 
-	alignment = 'middle_right',					-- top-left,top-middle,top-right,bottom-left,bottom-middle,bottom-right,
+	alignment = 'middle-left',					-- top-left,top-middle,top-right,bottom-left,bottom-middle,bottom-right,middle_right
 												-- middle-left,middle-middle,middle-right,none
 	--Arch Duoscreen
 	--gap_x = -1910,
-	gap_x = 10,									-- pixels between right or left border
-	gap_y = 10,									-- pixels between bottom or left border
+	gap_x = 100,									-- pixels between right or left border
+	gap_y = 200,									-- pixels between bottom or left border
 	minimum_height = 200,						-- minimum height of window
 	minimum_width = 280,						-- minimum height of window
 	maximum_width = 280,						-- maximum height of window
@@ -80,9 +80,9 @@ conky.config = {
 	own_window_argb_value = 150,				    -- real transparency - composite manager required 0-255
 	own_window_argb_visual = true,				-- use ARGB - composite manager required
 	own_window_class = 'Conky',					-- manually set the WM_CLASS name for use with xprop
-	own_window_colour = '#000000',				-- set colour if own_window_transparent no
+	own_window_colour = '#00000000',				-- set colour if own_window_transparent no
 	own_window_hints = 'undecorated,below,above,sticky,skip_taskbar,skip_pager',  -- if own_window true - just hints - own_window_type sets it
-	own_window_transparent = false,				-- if own_window_argb_visual is true sets background opacity 0%
+	own_window_transparent = true,				-- if own_window_argb_visual is true sets background opacity 0%
 	own_window_title = 'system_conky',			-- set the name manually  - default conky "hostname"
 	own_window_type = 'override',				    -- if own_window true options are: normal/override/dock/desktop/panel
 

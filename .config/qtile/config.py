@@ -1,12 +1,12 @@
 # ------------------------ importing modules ------------------------ #
 
-from modules.bars.pink_bar import screens
+from modules.bars.dwm_bar import screens
 from modules.groups import groups
 from modules.hooks import *
 from modules.keys import keys
 from modules.layouts import floating_layout, layouts
 from modules.mouse import mouse
-#from modules.bar import screens
+# from modules.bar import screens
 from modules.variables import home, mod, terminal
 
 # ------------------------------------------------------------------- #

@@ -59,16 +59,12 @@ super + F12
 #################################################################
 
 #Atom
-super + e
-    atom
+super + c
+    clipmenu
 
 #Browser
 super + w
     vivaldi-stable
-
-#Conky-toggle
-super + c
-    conky-toggle
 
 #killall conky
 super + ctrl + c
